@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Préstamo de Equipos</title>
+</head>
+<body>
+    <img src="../Imagenes/logo-cesde-blanco-sin-fondov2.png">
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="servicios.html">Servicios</a>
+            </li>
+            <li>
+                <a href="blog.html">Blog</a>
+            </li>
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>
+            <li>
+                <a href="ubicacion.html">Ubicación</a>
+            </li>
+            <li>
+                <a href="login.html">Préstamo</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1>Solicitud de Préstamo de Equipos</h1>
+
+        <form action="/enviar-datos" method="post">
+
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required>
+            <br>
+            <label for="documento">Número de Documento:</label>
+            <input type="tel" id="documento" name="documento" placeholder="Número de Documento" required>
+            <br>
+            <label for="equipo">Tipo de Equipo:</label>
+                <select name="equipo">
+                <option value="seleccione-equipo">Seleccione un equipo </option>
+                <option value="desarrollo-software">Desarrollo de Software</option>
+                <option value="Diseño-grafico">Diseño Gráfico</option>
+                <option value="herramientas-ofimaticas">Herramientas Ofimáticas</option>
+                </select> <br>
+            <label for="fecha-prestamo">Fecha de Préstamo:</label>
+            <input type="date" id="fecha-prestamo" name="fecha-prestamo" required>
+            <br>
+            <label for="hora-prestamo">Hora de Préstamo:</label>
+            <input type="time" id="hora-prestamo" name="hora-prestamo" required>
+            <br><br>
+
+            <button type="submit">Solicitar Préstamo</button>
+        </form>
+
+        <footer style="position:fixed; bottom: 0;">
+            <p>© 2023 CESDE - Todos los derechos reservados.</p>
+        </footer>
+    </section>
+</body>
+</html>
